@@ -1,0 +1,32 @@
+######################################################
+Para usar linux en windows, se necesita descargar ubuntu de la microsoft store y activar el wsl. 
+
+COMANDOS GENERALES
+ctrl+l -->limpia la consola
+se comienza a escribir las primeras letras y con tab, ubuntu autocompleta
+
+COMANDOS MANEJO DE ARCHIVOS Y CARPETAS
+tree--> genera una lista en formato de arbol de todas las carpetas y archivos que se contienen en la ruta
+tree -L n--> hace lo mismo que el tree normal pero delimita los niveles, siendo n la cantidad de niveles que se desea mostrar. 
+ls  --> enlista carpetas
+ls -l   --> lista mas extensa
+ls -lS  -->Ordena la lista por el peso de los archivos
+ls -lSh  -->Ordena por peso y muestra el peso
+mkdir nombre-->crea una carpeta
+mkdir "nomnbre con espacio" -->Crea una carpeta que tenga un espacio en el nombre
+touch nombre.extension -->crea un archivo (ejemplo touch archivo.py)
+touch "nombre con espacio.extension"-->crea un archivo con espacios (ejemplo touch "archivo de prueba.py")
+cd --> cambia de carpeta
+cp archivo copia_archivo -->Hace una copia de un archivo (ejemplo cp hola.py copia_hola.py)
+mv archivo ruta --> mueve un archivo (ejemplo mv copia_hola.py ..)
+mv archivo nuevo_nombre ruta --> mueve un archivo cambiandole de nombre (ejemplo mv copia_hola.py nuevo_nombre.py ..)
+rm archivo --> borra un archivo 
+rm -ri carpeta -->borra una carpeta de forma interactiva, es decir preguntando "estas seguro que quieres borrar la carpeta?" 
+
+COMANDOS PARA CONTENIDO DE ARCHVOS
+head archivo --> muestra el contenido que aparezca al principio de un archivo (cabecera)
+head archivo -n x --> muestra una cantidad delimitada de lineas de arriba hacia abajo del contenido de un archivo, siendo x la cantidad de lineas que queremos mostrar.
+tail archivo --> muestra el contenido que aparezca al final de un archivo (pie)
+tail archivo -n x --> muestra una cantidad delimitada de lineas de abajo hacia arriba del contenido de un archivo, siendo x la cantidad de lineas que queremos mostrar.
+less archivo -->muestra el contenido con funciones como busqueda.
+  /palabra --> con el commando de less activo, se pone la barrita con una palabra y la busca dentro del archivo. 
